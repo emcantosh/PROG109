@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Module 01</title>
+  </head>
+  <body>
+    <h1>Module 01: Introduction to HTML</h1>
+    <h2>Created by: Emily McAntosh</h2>
+    <h3>Chocolate Molten Cakes</h3>
+    <figure>
+      <p><a href = "https://sallysbakingaddiction.com/chocolate-lava-cakes/"> <img src=https://31p86334w2bvkz0249eyr0cr-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/chocolate-molten-lava-cakes-600x900.jpg alt="Sally's Baking Addiction" title="Chocolate Molten Cake" ></a></p>
+        <figcaption>
+          These chocolate molten cakes are sinfully delicious!
+        </figcaption>
+    </figure>
+    <h4>More Recipes:</h4>
+  <p><a href = "http://www.ldsliving.com/15-Decadent-Desserts-to-Fall-in-Love-with-This-Valentine-s-Day/s/84378">
+    <img src="https://d3ewd3ysu1dfsj.cloudfront.net/images/stories/large/34884.jpg?1486652589" alt="White Chocolate Raspberry Cheesecake" title="White Chocolate Raspberry Cheesecake" ></a></p>
+      
+  <p><a href = "https://houseofnasheats.com/french-fruit-tart/"><img src="https://i.pinimg.com/originals/eb/1a/50/eb1a50e00faa06de1d5ff15c45c6cac1.jpg" alt="Fruit Tart" title="Fruit Tart" ></a></p>
+      
+  <p><a href = "http://www.bigoven.com/recipe/Lemon-Raspberry-Bars/105210"> <img src="https://i.pinimg.com/originals/23/6e/05/236e05a054648eb621c9cb128193ac62.jpg" alt="Lemon Raspberry Bars" title="Lemon Raspberry Bars" ></a></p>
+      
+  <p><a href = "https://cookiesandcups.com/easy-chocolate-mousse/"> <img 
+           src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/96/3d/43/963d43de-0af1-1438-3438-f92a88833c65/source/256x256bb.jpg" alt="Chocolate Mousse" title="Chocolate Mousse" ></a></p>
+      
+  <p> <a href = "https://www.allrecipes.com/recipe/7441/key-lime-cheesecake-i/"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple20/v4/26/56/23/265623dc-bf2a-d794-aea3-be0577f08df2/source/256x256bb.jpg" alt="Key Lime Cheesecake" title="Key Lime Cheesecake" /></a>
+    </p>
+  </body>
+</html>
