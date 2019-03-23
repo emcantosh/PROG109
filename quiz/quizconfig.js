@@ -7,12 +7,6 @@ correctchoices[2]='a'
 correctchoices[3]='c'
 correctchoices[4]='c'
 correctchoices[5]='c'
-correctchoices[6]='c'
-correctchoices[7]='b'
-correctchoices[8]='b'
-correctchoices[9]='c'
-correctchoices[10]='b'
-
 
 
 function gradeit(){
