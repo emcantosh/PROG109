@@ -1,17 +1,9 @@
-/***********************************************
-* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
-* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
-* This notice and footnote must stay intact for use
-* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
-***********************************************/
 
-//Enter total number of questions:
 var totalquestions=10
 
-//Enter the solutions corresponding to each question:
 var correctchoices=new Array()
-correctchoices[1]='c' //question 1 solution
-correctchoices[2]='a' //question 2 solution, and so on.
+correctchoices[1]='c' 
+correctchoices[2]='a' 
 correctchoices[3]='c'
 correctchoices[4]='c'
 correctchoices[5]='c'
@@ -21,7 +13,7 @@ correctchoices[8]='b'
 correctchoices[9]='c'
 correctchoices[10]='b'
 
-/////Don't edit beyond here//////////////////////////
+
 
 function gradeit(){
 var incorrect=null
@@ -46,7 +38,7 @@ document.cookie='q='+incorrect
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
-window.location="results.htm"
+window.location="results.html"
 }
 
 
@@ -71,6 +63,5 @@ else
 win2.document.write("Question "+i+"="+correctchoices[i]+"<br>")
 }
 win2.document.write('</center></font>')
-win2.document.write("<h5>Note: The solutions in red are the ones to the questions you had incorrectly answered.</h5><p align='center'><small><a href='http://www.javascriptkit.com' target='_new'>JavaScript Kit quiz script</a></small>")
 win2.document.close()
 }
