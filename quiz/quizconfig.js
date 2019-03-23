@@ -24,7 +24,7 @@ for (q=1;q<=totalquestions;q++){
 		actualchoices[q]=thequestion[c].value
 		}
 		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
+	if (actualchoices[q]!=correctchoices[q]){ 
 		if (incorrect==null)
 		incorrect=q
 		else
@@ -38,7 +38,7 @@ document.cookie='q='+incorrect
 if (document.cookie=='')
 alert("Your browser does not accept cookies. Please adjust your browser settings.")
 else
-window.location="results.html"
+window.location="quiz/results.html"
 }
 
 
