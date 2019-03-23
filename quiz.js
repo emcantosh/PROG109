@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        </head>
+  <body>
+<div id="quiz"></div>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+<script>
+
 (function() {
   function buildQuiz() {
 
@@ -110,3 +122,6 @@
 
   submitButton.addEventListener("click", showResults);
 })();
+</script>
+</body>
+</html>
