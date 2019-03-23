@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>JavaScriptKit.com Multiple Choice Quiz Script</title>
+<title>Random Trivia</title>
 
 <style>
 .qheader{
@@ -18,13 +18,6 @@ font:normal 13px Arial;
 
 <script>
 
-/***********************************************
-* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
-* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
-* This notice and footnote must stay intact for use
-* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
-***********************************************/
-
 var actualchoices=new Array()
 document.cookie="ready=yes"
 </script>
@@ -32,13 +25,6 @@ document.cookie="ready=yes"
 </head>
 
 <body bgcolor="#FFFFFF">
-
-<!--Comments on configuring quiz script-->
-<!--Change the questions below any way you want, but make note of the following:-->
-<!--1) Perserve the <FORM> tags -->
-<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
-<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
-<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
 
 <p align="center">
 
@@ -161,7 +147,5 @@ document.cookie="ready=yes"
 <input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
 </form>
 
-<p id="footnote" align="center"><font face="arial" size="-1">Quiz script provided by<br>
-<a href="http://www.javascriptkit.com">JavaScriptKit.com</a></font></p>
 </body>
 </html>
