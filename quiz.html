@@ -1,127 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-        </head>
-  <body>
-<div id="quiz"></div>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-<script>
+<html>
+<head>
+<title>multiple-choice quiz form</title>
+</head>
+<body bgcolor=#ffffff>
 
-(function() {
-  function buildQuiz() {
+<h3>Vocabulary Quiz I</h3>
 
-    const output = [];
+<form method="post" action="mailto:raizen@mail.utexas.edu?subject=Vocabulary Quiz 1" enctype="text/plain">
 
+Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
 
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-   
-      const answers = [];
+<P>1. The word which means "house" is:<BR>
+<input type="radio" name="1.The word which means house is" value="maison">maison<BR>
+<input type="radio" name="1.The word which means house is" value="quatre">quatre<BR>
+<input type="radio" name="1.The word which means house is" value="soleil">soleil<BR>
+<input type="radio" name="1.The word which means house is" value="poisson">poisson<BR>
+</p>
 
-     
-      for (letter in currentQuestion.answers) {
-         answers.push(
-          `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${currentQuestion.answers[letter]}
-          </label>`
-        );
-      }
+<P>2. The word which means "fish" is:<BR>
+<input type="radio" name="2. The word which means fish is" value="maison">maison<BR>
+<input type="radio" name="2. The word which means fish is" value="valise">valise<BR>
+<input type="radio" name="2. The word which means fish is" value="soleil">soleil<BR>
+<input type="radio" name="2. The word which means fish is" value="poisson">poisson<BR>
+</p>
 
-   
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join("")} </div>`
-      );
-    });
+<P>3. The word which means "suitcase" is:<BR>
+<input type="radio" name="3. The word which means suitcase is" value="renard">renard<BR>
+<input type="radio" name="3. The word which means suitcase is" value="valise">valise<BR>
+<input type="radio" name="3. The word which means suitcase is" value="soleil">soleil<BR>
+<input type="radio" name="3. The word which means suitcase is" value="poisson">poisson<BR>
+</p>
 
-
-    quizContainer.innerHTML = output.join("");
-  }
-
-  function showResults() {
- 
- 
-    const answerContainers = quizContainer.querySelectorAll(".answers");
-
-    let numCorrect = 0;
-
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-     
-      if (userAnswer === currentQuestion.correctAnswer) 
-        numCorrect++;
-        answerContainers[questionNumber].style.color = "lightgreen";
-      } else {
-        answerContainers[questionNumber].style.color = "red";
-      }
-    });
-    
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
-
-  const quizContainer = document.getElementById("quiz");
-  const resultsContainer = document.getElementById("results");
-  const submitButton = document.getElementById("submit");
-  const myQuestions = [
-    {
-      question: "What is the capitol of Oregon?",
-      answers: {
-        a: "Portland",
-        b: "Salem",
-        c: "Eugene"
-      },
-      correctAnswer: "a"
-    },
-     {
-      question: "Who created the light bulb?",
-      answers: {
-        a: "Thomas Edison",
-        b: "Nikkola Tesla",
-        c: "Warren de La Rue"
-      },
-      correctAnswer: "c"
-    },
-     {
-      question: "Where is the BC bookstore located?",
-      answers: {
-        a: "Building A",
-        b: "Building B",
-        c: "Building D"
-      },
-      correctAnswer: "b"
-    },
-    {
-      question: "What is your quest?",
-      answers: {
-        a: "To find the Holy Grail",
-        b: "Defeat Lord Voldemort",
-        c: "To deliver Maui to Te Fiti to restore the Heart of the Ocean"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Where is Waldo really?",
-      answers: {
-        a: "Antarctica",
-        b: "Area 51",
-        c: "Zurich?",
-      },
-      correctAnswer: "c"
-    }
-  ];
-
-  buildQuiz();
-
-  submitButton.addEventListener("click", showResults);
-})();
-</script>
+<br>
+<br>
+<br>
+<br>
+<input type="submit" value="Send Form">
+<input type="reset" value="Clear Form">
+</form>
 </body>
 </html>
